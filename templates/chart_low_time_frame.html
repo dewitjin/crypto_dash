@@ -1,0 +1,11 @@
+<div class="row">
+    <h2>{{ selected_symbols }} from {{ selected_date_start }} to {{ selected_date_end }}</h2>
+    <h3>Low time frame chart (5 minutes candles)</h3>
+    <div class="row" id="chart_low_timeframe" style="padding: 20px;"></div>
+</div>
+<script type="text/javascript">
+            var low_time_frame_data = {{ low_time_frame_data | tojson |safe }};
+</script>
+<script src="../static/chart_low_timeframe.js"></script>
+
+

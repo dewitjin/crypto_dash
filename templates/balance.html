@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <br><br>
+    <div class="row">
+        <div class="col-10">
+            <h1 class="text-center">{{ title }}</h1>
+        </div>
+        <div class="col-2">
+            <a class="btn btn-outline-primary btn-lg col-12" href="/" role="button">Home</a>
+        </div>
+    </div>
+    <br><br>
+    <div id=my_balances>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Ticker</th>
+                <th scope="col">Balance</th>
+            </tr>
+            </thead>
+            {% for balance in my_balances %}
+                <tr>
+                    <td>{{ balance['asset'] }}
+                    </th>
+                    <td>{{ balance['free'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+python-binance==1.0.12
+flask==2.0.1

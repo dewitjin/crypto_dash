@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <br><br>
+    <div class="row">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div style="border:1px solid grey; padding: 10px; background: #c9d3da">
+                    <ul class=flashes>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        {% endwith %}
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-10">
+            <h1 class="text-center">{{ title }}</h1>
+            <p class="text-center">CSV reports will be downloaded to the data directory.</p>
+        </div>
+        <div class="col-2">
+            <a class="btn btn-outline-primary btn-lg col-12" href="/" role="button">Home</a>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-6">
+            <a class="btn btn-outline-primary btn-lg col-12" href="/download_last_prices_data" role="button">Download
+                last prices of all symbols </a>
+        </div>
+        <div class="col-6">
+            <a class="btn btn-outline-primary btn-lg btn-block col-12" href="/download_interval_data" role="button">Download
+                BTCUSDT in one day interval</a>
+        </div>
+    </div>
+    <br><br>
+</div>
+</body>
+</html>

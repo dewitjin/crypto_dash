@@ -1,0 +1,10 @@
+<div class="row">
+    <h3>High time frame chart (daily candles)</h3>
+    <div class="row" id="chart_high_timeframe" style="padding: 20px;"></div>
+</div>
+<script type="text/javascript">
+            var high_time_frame_data = {{ high_time_frame_data | tojson |safe }};
+</script>
+<script src="../static/chart_high_timeframe.js"></script>
+
+
