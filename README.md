@@ -44,7 +44,7 @@ This project uses [python-binance](https://python-binance.readthedocs.io/en/late
 
 - /chart
 
-![chart](images/chart.png)
+![chart](images/chart.PNG)
 
 - chart error message
 
