@@ -36,11 +36,11 @@ This project uses [python-binance](https://python-binance.readthedocs.io/en/late
 
 - Index
 
-![index](images/index.png)
+![index](images/index.PNG)
 
 - /balance
 
-![balance](images/balance.png)
+![balance](images/balance.PNG)
 
 - /chart
 
@@ -48,11 +48,11 @@ This project uses [python-binance](https://python-binance.readthedocs.io/en/late
 
 - chart error message
 
-![chart](images/chart_error_message.png)
+![chart](images/chart_error_message.PNG)
 
 - chart success message
 
-![chart](images/chart_success_message.png)
+![chart](images/chart_success_message.PNG)
 
 - returned low time frame chart (5 minutes candles) 
 
