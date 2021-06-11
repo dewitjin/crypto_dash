@@ -1,0 +1,5 @@
+# THIS IS ONLY FOR THE gitattributes REPOSITORY.
+
+*.py linguist-detectable=true
+*.js linguist-detectable=true
+*.html linguist-detectable=false
